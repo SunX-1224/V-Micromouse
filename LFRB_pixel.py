@@ -1,27 +1,29 @@
 """
-    This program was designed to test a n algorithm to solve maze for micromouse.
+    This program was designed to test an algorithm to solve maze for micromouse.
 
     This algorithm solves maze on LFRB order. It explores map to reach finish point and returns back to inital state.
     On this process, it records two solutions for the maze. On reversing, the second solution, if it matches with first
     one, then the maze has only one solution, else multiple. At last, two solutions can be compared to find the shortest
     path which may be used for "the run".
 
-    This is a python pseudo-code designed to finally implementon C/C++ in microcontroller.
+    This is a python pseudo-code designed to finally implement on C/C++ in microcontroller.
 """
 import cv2
 
 maze = cv2.imread("LFRB_pixelmaze.png")
 nmaze = maze
 
+f, r, b, l = 0, 1, 2, 3 # n, e, s, w = 0, 1, 2, 3  ## these are the numbers to indicate which direction the bot is facing
+
 start =  (0,1)
-end = (128,127)      ## Enter start and end point to see the maze working
+end = (128,127)
+facing = r                          ## Enter start and end point and inital "facing" direction  ## initial facing must be set here for later
+                                    # use while checking for pixels, in actual micromouse,setting appropriate value for "facing" is of no use
 
 f_color = [100, 100, 100]
 b_color = [0, 100, 0]
 
 wall_color = [0,0,0]
-
-f, r, b, l = 0, 1, 2, 3 # n, e, s, w = 0, 1, 2, 3
 
 def check_forward(cur_pos, facing):
     pos = (cur_pos[0] + facing%2*(1-2*int(facing/2)), cur_pos[1] +  (facing-1)%2*(facing-1))
@@ -132,7 +134,7 @@ def run(stack, cur_pos, facing):
 
 
 def main():
-    global maze, nmaze
+    global maze, nmaze, facing
     cur_pos = start
     facing = r
     f_stack, facing, cur_pos = find_path(cur_pos, facing, end, f_color)
