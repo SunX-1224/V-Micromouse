@@ -17,3 +17,12 @@ This repository is for MicroMouse done as a project by out Team in Robotics Club
 >  Set the start position to anywhere in the maze and set facing to any valid direction.
 
 (This one is not well-tested, so it may not work for every maze.. also any small flaw in the maze may affect the sensor reading. so, tweak anything you like while testing the program.)
+
+
+
+;;;;; Team Members ;;;;;
+> Sulav Gaire
+> Samman Shrestha
+> Pragati Basnet
+> Aliza Bhuzel
+> Sunil Sapkota
