@@ -3,9 +3,9 @@ import cv2
 
 WIN = pygame.display.set_mode((774,774))
 BG = (100,100,100)
-maze = pygame.image.load("linemaze.png").convert_alpha()
+maze = pygame.image.load("LFRB_linemaze.png").convert_alpha()
 
-lnm = cv2.imread("linemaze.png")
+lnm = cv2.imread("LFRB_linemaze.png")
 
 class Bot:
 
