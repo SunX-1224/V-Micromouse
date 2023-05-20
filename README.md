@@ -1,6 +1,14 @@
 # MicroMouse
 This repository is for MicroMouse done as a project by out Team in Robotics Club of WRC. (if not updated, this repo only contains simulations for maze solving algorithm for micromouse with shortest path finding mechanism.)
 
+This project was divided into 2 parts,
+
+* Simulation : 
+ > This part focused on simulating different maze solving algorithms best suited for our purposes.
+ 
+ * Implementation
+ >This part includes several stages like, Designing the bot, electronics, code and testing.
+
 
 <<<< LFRB pixelmaze >>>>
 > * In order to test other mazes using this program, generate a pixel maze of wall size 1 pixel by using any means, ( I used this generator : https://keesiemeijer.github.io/maze-generator/  )
@@ -19,8 +27,7 @@ This repository is for MicroMouse done as a project by out Team in Robotics Club
 (This one is not well-tested, so it may not work for every maze.. also any small flaw in the maze may affect the sensor reading. so, tweak anything you like while testing the program.)
 
 
-
-;;;;; Team Members ;;;;;
+< Team Members >
 > * Sulav Gaire
 > * Samman Shrestha
 > * Pragati Basnet
