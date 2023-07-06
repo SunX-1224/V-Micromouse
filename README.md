@@ -1,4 +1,4 @@
-# MicroMouse
+# V-MicroMouse
 This repository is for MicroMouse done as a project by out Team in Robotics Club of WRC. (if not updated, this repo only contains simulations for maze solving algorithm for micromouse with shortest path finding mechanism.)
 
 This project was divided into 2 parts,
@@ -26,9 +26,13 @@ Algorithm is same as above but here I wanted to spice things up, so I created a 
 
 (This one is not well-tested, so it may not work for every maze.. also any small flaw in the maze may affect the sensor reading. so, tweak anything you like while testing the program.)
 
-# Team Members 
- * Sunil Sapkota
- * Sulav Gaire
- * Samman Shrestha
- * Pragati Basnet
- * Aliza Bhuzel
+# Team V-Robotics
+* Sunil Sapkota
+* Nisha Pandey
+* Siddhartha Gupta
+* Sumit Sigdel
+* Sanjog Sapkota
+* Sandesh Ghorasai
+* Safal Lamsal
+* Nirmal Adhikari
+* Aakash Rai
