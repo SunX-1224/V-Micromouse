@@ -23,16 +23,4 @@ Algorithm is same as above but here I wanted to spice things up, so I created a 
 * Save the generated maze as line in png or any other image format
 * The maze should have black rectangle of width(perpendicular ko maze line) greater than 24 pixels and height at least 6 pixels as end point.
 * Set the start position to anywhere in the maze and set facing to any valid direction.
-
 (This one is not well-tested, so it may not work for every maze.. also any small flaw in the maze may affect the sensor reading. so, tweak anything you like while testing the program.)
-
-# Team V-Robotics
-* Sunil Sapkota
-* Nisha Pandey
-* Siddhartha Gupta
-* Sumit Sigdel
-* Sanjog Sapkota
-* Sandesh Ghorasai
-* Safal Lamsal
-* Nirmal Adhikari
-* Aakash Rai
