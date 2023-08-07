@@ -16,7 +16,7 @@ class Bot:
         self.surf = pygame.Surface(self.size)
         self.snsr_pos = [(0,6),(6,0),(12,0),(18,0),(24, 6)]
         self.sensor_value = [0,0,0,0,0]
-        self.speed = 6
+        self.speed = 4
         self.on = True
         self.map = []
 
@@ -64,18 +64,18 @@ class Bot:
         if self.sensor_value == [1, 1, 1, 1, 1]: self.on = False
         if not self.on: return
         self.check()
-        if self.sensor_value[0] == 1:
+        if self.sensor_value[0] == 1: # left
             self.update_sensor(3)
             self.map.append(3)
-        elif self.sensor_value[1] == 1 or self.sensor_value[2] == 1 or self.sensor_value[3] == 1:
+        elif self.sensor_value[1] == 1 or self.sensor_value[2] == 1 or self.sensor_value[3] == 1: #forward
             self.update_sensor(0)
             self.pid()
             if self.sensor_value[4] == 1: self.map.append(0)
             self.update_pos()
-        elif self.sensor_value[4] == 1:
+        elif self.sensor_value[4] == 1: #right
             self.update_sensor(1)
             self.map.append(1)
-        else:
+        else:                           #back
             self.update_sensor(2)
             self.map.append(2)
 
@@ -156,7 +156,7 @@ class Bot:
 
 
 def main():
-    speed = 150
+    speed = 90
     start = (350,1)
     facing = 2
     bot = Bot(start, facing)
@@ -167,7 +167,7 @@ def main():
     bot.snsr_pos = [(0,6),(6,0),(12,0),(18,0),(24, 6)]
     bot.update_sensor(facing)
     bot.check()
-    speed = 120
+    speed = 90
     print(bot.map)
     bot.search()
     print(bot.map)

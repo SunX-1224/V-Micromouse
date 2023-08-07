@@ -10,13 +10,17 @@
 """
 import cv2
 
-maze = cv2.imread("LFRB_pixelmaze.png")
+import sys
+
+import cv2
+
+maze = cv2.imread("maze2.png")
 nmaze = maze
 
 f, r, b, l = 0, 1, 2, 3 # n, e, s, w = 0, 1, 2, 3  ## these are the numbers to indicate which direction the bot is facing
 
 start =  (0,1)
-end = (128,127)
+end = (64,63)
 facing = r                          ## Enter start and end point and inital "facing" direction  ## initial facing must be set here for later
                                     # use while checking for pixels, in actual micromouse,setting appropriate value for "facing" is of no use
 
@@ -83,7 +87,7 @@ def find_path(cur_pos, facing, end_point, color):
             if (s1==1 and s3 == 3) or (s1==3 and s3==1):
                 stack = stack[:-3]
                 stack.append(b)
-            elif s1+s3==6:
+            elif s1==3 and s3==3: #s1 = 3, s3 = 3
                 stack = stack[:-3]
                 stack.append(f)
             elif (s1==3 and s3==0) or (s1==0 and s3==3):
@@ -98,7 +102,7 @@ def find_path(cur_pos, facing, end_point, color):
 
         cv2.imshow("maze", cv2.resize(maze, (768, 768), interpolation=cv2.INTER_NEAREST))
         if cv2.waitKey(1) == 27:
-            break
+            sys.exit(0)
     return stack, (facing+2)%4, cur_pos
 
 
@@ -128,7 +132,7 @@ def run(stack, cur_pos, facing):
 
         cv2.imshow("maze", cv2.resize(maze, (768, 768), interpolation=cv2.INTER_NEAREST))
         if cv2.waitKey(1) == 27:
-            break
+            sys.exit(0)
     cv2.imshow("maze", cv2.resize(maze, (768, 768), interpolation=cv2.INTER_NEAREST))
     cv2.waitKey(5000)
 

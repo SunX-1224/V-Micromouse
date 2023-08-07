@@ -1,0 +1,35 @@
+@@ components and reference/available websites
+
+[[[ These components are not finalized till the arrival of rule-book ]]]
+
+
+>> Microcontroller (1)     : STM32F103C8T6
+https://www.daraz.com.np/products/bluepill-stm32f103c6t6-arm-stm32-minimum-system-development-board-i113743245-s1030926590.html?spm=a2a0e.searchlist.list.1.39f4459dlNLesP&search=1
+
+>> DC motors (2)	: encoded dc motors ( rpm 6v/12v)
+https://thinkrobotics.in/products/6v-90-rpm-n20-dc-encoder-gearmotor
+https://www.robotshop.com/ca/en/gm16-metal-dc-geared-motor-w-encoder-6v-900rpm.html
+
+>> Power supply		: 3.7v lipo battery with buck/boost converter + switches(at least 2)
+https://ghumtipasal.com.np/product/rechargeable-1200mah-3-7v-li-po-battery-103040/
+https://himalayansolution.com/product/buck-boost-module
+
+
+>> Motor driver(2)	: l293d ic
+https://himalayansolution.com/product/l293d-ic
+
+>> Sensors(3)		: Sharp Distance Sensor 2y0a21
+https://himalayansolution.com/product/sharp-distance-sensor-2y0a21
+
+>> Double sided A6 PCB board (2)
+https://himalayansolution.com/product/double-side-pcb-a6-size
+or
+Single sided A6 PCB board (2)
+https://himalayansolution.com/product/single-side-pcb-a6-size
+
+>> Wheels (4 - 8 :: few for backup) :: (pre-made or 3d printed with tube rubber cover recommended)
+https://himalayansolution.com/product/small-wheel
+
+>> Resistors, diodes, transistors, and other materials for PCB designing (to be filled)
+
+>> 5mm diamter screws/nuts/bolts
